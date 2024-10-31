@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home - Zombie Warriors</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <div id="Disclaimer-Legal">
+    <p>
+      © 2024 <a style="color: gray" href="https://github.com/developerkoen" target="_blank">developerkoen</a>. All rights reserved.<br>
+      © 2024 <a style="color: gray" href="https://github.com/lucasenlucas" target="_blank">lucaslucas</a>. All rights reserved.
+    </p>
+  </div>
+
+</body>
+
+</html>
